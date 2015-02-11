@@ -1,0 +1,60 @@
+<html> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+<FORM name="Calc">
+<TABLE>
+<TR>
+<TD>
+
+<input type="text" id="screen" Size="16">
+<input type="button" name="mode" value="mode" onclick="toggleMode()">
+<br>
+
+
+</TD>
+</TR>
+<TR>
+<TD>
+
+<input type="button" name="one"   value="1" onclick="pushInput(1)">
+<input type="button" name="two"   value="2" onclick="pushInput(2)">
+<input type="button" name="three" value="3" onclick="pushInput(3)">
+<input type="button" name="plus"  value="+" onclick="handleOperation('+')">
+<br>
+
+
+<input type="button" name="four"  value="4" onclick="pushInput(4)">
+<input type="button" name="five"  value="5" onclick="pushInput(5)">
+<input type="button" name="six"   value="6" onclick="pushInput(6)">
+<input type="button" name="minus" value="-" onclick="handleOperation('-')">
+<br>
+
+
+<input type="button" name="seven" value="7" onclick="pushInput(7)">
+<input type="button" name="eight" value="8" onclick="pushInput(8)">
+<input type="button" name="nine"  value="9" onclick="pushInput(9)">
+<input type="button" name="times" value="x" onclick="handleOperation('*')">
+<br>
+
+
+<input type="button" name="clear" value="c" onclick="clearStuff()">
+<input type="button" value="." onclick="pushInput('.')">
+<input type="button" name="zero"  value="0" onclick="pushInput(0)">
+<input type="button" id="enter"  value="=" onclick="gatherInput()">
+<input type="button" name="div"   value="/" onclick="handleOperation('/')">
+<br>
+
+
+</TD>
+</TR>
+</TABLE>
+</FORM>
+
+<br><br><br>
+
+<div id='display' >_ _ _</div>
+
+</html> 
